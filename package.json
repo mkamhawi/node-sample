@@ -4,7 +4,8 @@
   "description": "sample node js for testing with openshift",
   "main": "index.js",
   "scripts": {
-    "test:unit": "LOG_LEVEL=INFO ./node_modules/.bin/nyc --reporter=lcov --report-dir=./coverage/unit ./node_modules/.bin/mocha --reporter spec --exit ./tests/unit/*"
+    "test:unit": "LOG_LEVEL=INFO ./node_modules/.bin/nyc --reporter=lcov --report-dir=./coverage/unit ./node_modules/.bin/mocha --reporter spec --exit ./tests/unit/*",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
