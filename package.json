@@ -1,0 +1,28 @@
+{
+  "name": "sample-node-js",
+  "version": "1.0.0",
+  "description": "sample node js for testing with openshift",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "LOG_LEVEL=INFO ./node_modules/.bin/nyc --reporter=lcov --report-dir=./coverage/unit ./node_modules/.bin/mocha --reporter spec --exit ./tests/unit/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ibm.com/Mohamed-Elkamhawi/node-sample.git"
+  },
+  "author": "Mohamed El Kamhawi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.4"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "mocha": "^6.1.4",
+    "nock": "10.0.6",
+    "npm-check": "5.9.0",
+    "nyc": "13.3.0"
+  }
+}

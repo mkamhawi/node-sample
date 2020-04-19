@@ -1,0 +1,10 @@
+*logs
+.log*
+.nyc_output*
+.sonarlint
+.DS_Store
+coverage*
+node_modules*
+tests/stress/jmeter.log
+.stryker-tmp
+.apiconnect
